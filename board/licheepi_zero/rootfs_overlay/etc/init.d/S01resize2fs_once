@@ -1,0 +1,25 @@
+#!/bin/sh
+
+function get_current_root_device
+{
+	for i in `cat /proc/cmdline`; do
+		if [ ${i:0:5} = "root=" ]; then
+			CURRENT_ROOT="${i:5}"
+            # /dev/mmcblk0p3
+		fi
+	done
+}
+
+case "$1" in
+    start)
+        echo "Starting resize2fs_once"
+        get_current_root_device
+        resize2fs $CURRENT_ROOT &&
+        rm /etc/init.d/S01resize2fs_once
+        ;;
+    *)
+        echo "Usage: $0 start" >&2
+        exit 3
+        ;;
+esac
+
