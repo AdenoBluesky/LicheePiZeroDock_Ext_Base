@@ -1,0 +1,17 @@
+{
+  "software": {
+    "version": "2025.10.16",
+    "description": "AB update (JSON)",
+    "images": [
+      {
+        "filename": "rootfs.ext4.gz",
+        "device" : "/dev/swupdate_rootfs_target",
+        "type": "raw",
+        "compressed": true
+      }
+    ],
+    "scripts": [
+      { "filename": "toggle_partition.sh", "type": "shellscript" }
+    ]
+  }
+}
