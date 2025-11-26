@@ -1,5 +1,5 @@
---- arch/arm/dts/org/Makefile	2025-07-08 00:48:28.000000000 +0900
-+++ arch/arm/dts/Makefile	2025-11-12 01:08:58.667393873 +0900
+--- a/arch/arm/dts/org/Makefile	2025-07-08 00:48:28.000000000 +0900
++++ b/arch/arm/dts/Makefile	2025-11-12 01:08:58.667393873 +0900
 @@ -650,7 +650,9 @@
  	sun8i-s3-elimo-initium.dtb \
  	sun8i-s3-pinecube.dtb \
