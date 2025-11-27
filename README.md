@@ -22,6 +22,12 @@ buildroot-2025.02.7
 git clone git@github.com:AdenoBluesky/LicheePiZeroDock_Ext_Base.git
 ```
 
+### 初期設定・ファイルコピー
+
+```shell
+init.sh
+```
+
 ### make
 
 ```shell

@@ -1,0 +1,10 @@
+--- a/arch/arm/boot/dts/allwinner/Makefile	2025-08-21 01:30:58.000000000 +0900
++++ b/arch/arm/boot/dts/allwinner/Makefile	2025-11-06 00:28:26.201265717 +0900
+@@ -260,6 +260,7 @@
+ 	sun8i-v3s-anbernic-rg-nano.dtb \
+ 	sun8i-v3s-licheepi-zero.dtb \
+ 	sun8i-v3s-licheepi-zero-dock.dtb \
++	sun8i-v3s-licheepi-zero-dock-ex.dtb \
+ 	sun8i-v40-bananapi-m2-berry.dtb
+ dtb-$(CONFIG_MACH_SUN9I) += \
+ 	sun9i-a80-optimus.dtb \

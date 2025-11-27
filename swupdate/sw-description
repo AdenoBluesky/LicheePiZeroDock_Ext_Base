@@ -1,6 +1,6 @@
 {
   "software": {
-    "version": "2025.10.16",
+    "version": "@VERSION@",
     "description": "AB update (JSON)",
     "images": [
       {
