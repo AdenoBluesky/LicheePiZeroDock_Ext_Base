@@ -1,1 +1,3 @@
+source "$BR2_EXTERNAL_LICHEEPIZERODOCK_EXT_BASE_PATH/package/lradc_check/Config.in"
+
 

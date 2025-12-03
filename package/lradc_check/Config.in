@@ -1,0 +1,29 @@
+
+config BR2_PACKAGE_LRADC_CHECK
+  bool "lradc_check (LRADC key monitor)"
+  depends on BR2_PACKAGE_HOST_RUSTC_TARGET_ARCH_SUPPORTS
+  select BR2_PACKAGE_HOST_RUSTC
+  help
+    LRADC Key Monitor for Lichee Pi Zero.
+
+    Rust + WebSocket + evdev で /dev/input/event0 を監視して、
+    Webブラウザからボタン状態をリアルタイム表示するツールです。
+
+    https://github.com/AdenoBluesky/lradc_check
+
+config BR2_PACKAGE_LRADC_CHECK_AUTOSTART
+    bool "start lradc_check at boot"
+    depends on BR2_PACKAGE_LRADC_CHECK
+    default y
+    help
+      If enabled, lradc_check will be started automatically
+      at system boot by an init script.
+
+config BR2_PACKAGE_LRADC_CHECK_PORT
+    int "lradc_check listen port"
+    depends on BR2_PACKAGE_LRADC_CHECK
+    default 8081
+    range 1024 65535
+    help
+      TCP port for lradc_check HTTP/WebSocket server.
+      Example: 8081
